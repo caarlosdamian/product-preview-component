@@ -1,11 +1,116 @@
-.App {
-
-}
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   background: #F2EAE2;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card__container {
+  background: #FFFFFF;
+  border-radius: 10px;
+  width: 600px;
+  height: 450px;
+  display: flex;
+}
+
+.card__img {
+  width: 337px;
+  height: 450px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.right__wrapper {
+  padding: 32px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px
+}
+
+.card__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 5px;
+  color: #6C7289;
+}
+
+.card__header {
+  font-family: 'Fraunces 72pt';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #1C232B;
+  margin-bottom: 4px;
+}
+
+.card__description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #6C7289;
+  margin-bottom: 9px;
+}
+
+.card__price-container {
+  display: flex;
+  gap: 24px;
+}
+
+.card__price-title {
+  font-family: 'Fraunces 72pt';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #3D8168;
+}
+
+.card__price-subtitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  text-decoration-line: line-through;
+  color: #6C7289;
+}
+
+.card__button {
+  border: none;
+  background: #3D8168;
+  border-radius: 8px;
+  width: 100%;
+  padding: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.card__button:hover {
+  background: #1A4032;
 }
