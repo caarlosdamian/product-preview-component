@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import product from './images/image-product-desktop.jpg'
+import productMobile from './images/image-product-mobile.jpg'
 import icon from './images/icon-cart.svg'
 import './App.css'
 
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <div className="card__container">
         <img src={product} alt="product" className="card__img" />
+        <img src={productMobile} alt="product-mobile" className="product-mobile" />
         <div className="right__wrapper">
           <h3 className="card__title">PERFUME</h3>
           <h1 className="card__header">Gabrielle Essence Eau De Parfum</h1>

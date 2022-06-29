@@ -111,6 +111,35 @@ body {
   gap: 12px;
   cursor: pointer;
 }
+
 .card__button:hover {
   background: #1A4032;
+}
+
+.product-mobile {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .product-mobile {
+    display: inline;
+    width: 343px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .card__img {
+    display: none;
+  }
+
+  .card__container {
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 343px;
+    height: 611px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
